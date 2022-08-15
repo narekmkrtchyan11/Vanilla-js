@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(0deg, #9a968e,  #161b1c);
+}
+
+h1 {
+    color: white;
+}
+video {
+    border-radius: 10px 10px 0 0;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation {
+    padding:15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0 0 10px 10px;
+    background-color: #383e47;
+}
+
+.playBtn {
+    color: green;
+    border: none;
+    font-size: 35px;
+    background-color: #383e47;
+    cursor: pointer;
+}
+
+.resetBtn {
+    color: red;
+    border: none;
+    font-size: 35px;
+    background-color: #383e47;
+    cursor: pointer;
+}
+
+span {
+    font-size: 25px;
+    color: white;
+    margin: 5px;
+}
+
+.progressDiv {
+    width: 81%;
+    background-color: #85a1cc;
+    margin: 18px 20px 18px 20px;
+    cursor: pointer;
+    position: relative;
+  
+}
+
+.progress {
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+    padding-top: 10px;
+    height: 900%;
+    width: 22px;
+    background-color: white;
+    border-radius: 3px;
+}
+
