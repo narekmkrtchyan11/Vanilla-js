@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form" novalidate>
+            <h2>Register With Us</h2>
+            <div class="form-control">
+                <label for="firstname">Firstname</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Enter firstName">
+                <small data-id-error="firstName">error</small>
+            </div>
+            <div class="form-control">
+                <label for="lastName">Lastname</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Enter lastName">
+                <small data-id-error="lastName">error</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter email">
+                <small data-id-error="email">error</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter password">
+                <small data-id-error="password">error</small>
+            </div>
+            <div class="form-control">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Enter phone Number">
+                <small data-id-error="phoneNumber">error</small>
+            </div>
+            <button class="submitBtn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script type="module" src="./src/registration.js"></script>
+</body>
+</html>
