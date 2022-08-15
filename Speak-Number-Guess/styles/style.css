@@ -1,0 +1,56 @@
+body {
+   background-image: url(/images/bg.jpeg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    display: none;
+}
+
+.winGameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+span {
+    border: 1px solid white;
+    height: 80px;
+    min-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+img {
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.playBtn {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
