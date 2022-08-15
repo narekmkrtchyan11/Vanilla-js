@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffefea;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+#textBoxBtn {
+    cursor: pointer;
+    background-color: darksalmon;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+#textBoxBtn:focus {
+    outline: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+    width: 98%;
+}
+
+.box img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.box p {
+    width: 100%;
+    height: 50px;
+    background-color: darksalmon;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+
+}
+
+@media (max-width: 1100px) {
+    #container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    #container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#textBox {
+    position: relative;
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    background-color: #333;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    top: -400px;
+    transition: 0.5s ease-in;
+}
+
+#textBox.textBox {
+    top: 200px;
+}
+
+#textBox h1 {
+    font-size: 25px;
+    color: white;
+}
+
+#voices {
+    margin: 10px 0;
+    background-color: darksalmon;
+    height: 30px;
+    color: white;
+}
+
+#textBox textarea {
+    font-size: 16px;
+    padding: 10px;
+}
+
+#readTextBtn {
+    background-color: darksalmon;
+    margin: 10px 0;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.box.shadow {
+    box-shadow: 0 0 10px 5px darksalmon;
+}
+
+#textBox span {
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
